@@ -34,7 +34,7 @@ export const loginCredentials = async (
   }
 
   console.log(email, password);
-  return { success: "Logged in!" };
+  return { error: "Only google auth supported for now" };
 };
 
 export const addFriend = async (
