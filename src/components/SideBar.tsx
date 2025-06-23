@@ -55,7 +55,7 @@ const SideBar = async () => {
                   <span className='sr-only'>Your profile</span>
                   <div className='flex flex-col'>
                       <span className="text-base-content" aria-hidden='true'>{session!.user.name}</span>
-                      <span className='text-xs text-info-content' aria-hidden='true'>
+                      <span className='text-xs text-gray-800' aria-hidden='true'>
                           {session!.user.email}
                       </span>
                   </div>
