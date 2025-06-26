@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+YapApp
+YapApp is a real-time chat application built with Next.js, TailwindCSS, Zustand, Redis, and Pusher. 
+It supports secure Google authentication, features dynamic chat pages, message storage, and real-time updates—all with a modern and responsive UI.
 
-## Getting Started
+🚀 Live Demo
+https://yapapp.vercel.app
 
-First, run the development server:
+🛠️ Tech Stack
+Frontend: Next.js (App Router), TailwindCSS, DaisyUI, Zustand
+Backend: Server Actions, Redis (Upstash), Pusher, Auth.js
+✨ Features
+Google Sign-In with Auth.js for secure authentication
+Real-time messaging powered by Pusher
+Persistent message storage via Redis
+Client-side state management with Zustand
+Responsive UI with support for light and dark modes
+(Planned) Push notifications for instant updates
 
-```bash
+📦 Installation
+bash
+git clone https://github.com/Taher-Ali94/YapApp-Next.git
+cd YapApp-Next
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Environment Variables
+Create a .env.local file in the root directory and add the following (replace with your own values):
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Code
+NEXT_PUBLIC_PUSHER_KEY=your_pusher_key
+NEXT_PUBLIC_PUSHER_CLUSTER=your_pusher_cluster
+UPSTASH_REDIS_REST_URL=your_upstash_url
+UPSTASH_REDIS_REST_TOKEN=your_upstash_token
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+NEXTAUTH_URL=http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+💻 Usage
+Visit http://localhost:3000 after starting the development server.
+Sign in with your Google account.
+Start chatting in real time with other users!
+🤝 Contributing
+Contributions are welcome! Please open an issue or pull request for suggestions, bug reports, or improvements.
