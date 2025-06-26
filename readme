@@ -1,0 +1,30 @@
+# YapApp
+
+YapApp is a real-time chat application built with Next.js, TailwindCSS, Zustand, Redis, and Pusher.
+It supports secure Google authentication and features dynamic chat pages, message storage, and real-time updates.
+
+## 🚀 Live Demo
+
+https://yapapp.vercel.app
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js (App Router), TailwindCSS, DaisyUI, Zustand
+- **Backend**: Server Actions, Redis (Upstash), Pusher, Auth.js
+
+## 🔐 Features
+
+- Google Sign-In with Auth.js
+- Real-time messaging using Pusher
+- Redis for message storage
+- Zustand for client state management
+- Responsive UI with light/dark mode
+- Push notifications (in progress)
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yourusername/yapapp
+cd yapapp
+npm install
+npm run dev
